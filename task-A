@@ -1,0 +1,5 @@
+A) 
+
+kubectl get pv --sort-by=.metadata.name
+
+kubectl get pv --sort-by=.metadata.size
