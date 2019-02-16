@@ -1,11 +1,14 @@
+
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: app-data-claim 
+  name: app-data-pvc
+  labels:
+    app: app-data-pvc
 spec:
-  storageClassName: hostpath
+  storageClassName: manual
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
-     storage: 1Gi
+      storage: 1Gi
